@@ -18,7 +18,7 @@ local lsp_servers = {
 }
 
 local formatters = {
-    "djlint", "black", "isort", "stylue", "shfmt", "prettier",
+    "djlint", "black", "isort", "stylua", "shfmt", "prettier",
 }
 
 local diagnostics = {
