@@ -5,7 +5,6 @@ vim.opt.relativenumber = true
 -- テキストの折り返しを無効化
 vim.opt.wrap = false
 
-
 -- エンコーディングをUTF-8に設定
 vim.opt.fileencoding = "utf-8"
 -- スワップファイルを作成しない
@@ -14,7 +13,6 @@ vim.opt.swapfile = false
 vim.opt.hidden = true
 -- registerとclipboardの共有
 vim.opt.clipboard:append({ "unnamedplus" })
-
 
 -- Tab文字が表示される際の幅を設定
 vim.opt.tabstop = 4
@@ -42,8 +40,10 @@ vim.opt.hlsearch = true
 -- インクリメンタルサーチを有効化
 vim.opt.incsearch = true
 
-
 -- Windowの不透明度
 vim.opt.winblend = 0
 -- signカラムを表示
 vim.opt.signcolumn = "yes"
+
+-- 末尾に改行を追加
+vim.opt.fixendofline = true

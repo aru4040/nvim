@@ -49,9 +49,9 @@ M.config = function()
             { name = "nvim_lua" },
             { name = "luasnip" },
         }, {
-                { name = "buffer" },
-                { name = "pathl "},
-            }),
+            { name = "buffer" },
+            { name = "pathl " },
+        }),
     })
 end
 
