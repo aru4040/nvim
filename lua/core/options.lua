@@ -5,8 +5,6 @@ vim.opt.relativenumber = true
 -- テキストの折り返しを無効化
 vim.opt.wrap = false
 
--- エンコーディングをUTF-8に設定
-vim.opt.fileencoding = "utf-8"
 -- スワップファイルを作成しない
 vim.opt.swapfile = false
 -- バッファの切り替え時の未保存警告をオフ
@@ -33,7 +31,7 @@ vim.opt.cursorline = true
 vim.opt.showmatch = true
 
 -- 上下に余裕を持った表示にする
-vim.opt.scrolloff = 3
+vim.opt.scrolloff = 4
 
 -- 検索結果のハイライトを有効化
 vim.opt.hlsearch = true

@@ -6,12 +6,36 @@ return {
         priority = 1000,
     },
     {
+        "svrana/neosolarized.nvim",
+        dependencies = {
+            "tjdevries/colorbuddy.nvim",
+        },
+        lazy = false,
+        priority = 1000,
+        opts = {
+            comment_italics = true,
+            background_set = false,
+        },
+    },
+    {
         -- 構文解析
         "nvim-treesitter/nvim-treesitter",
         build = ":TSUpdate",
         config = function()
             require("nvim-treesitter.configs").setup({
-                ensure_installed = { "lua", "rust", "javascript", "typescript", "python", "toml", "yaml", "c", "csv", "html", "css" },
+                ensure_installed = {
+                    "lua",
+                    "rust",
+                    "javascript",
+                    "typescript",
+                    "python",
+                    "toml",
+                    "yaml",
+                    "c",
+                    "csv",
+                    "html",
+                    "css",
+                },
                 highlight = {
                     enable = true,
                 },
@@ -25,7 +49,7 @@ return {
         config = function()
             require("nvim-autopairs").setup({
                 check_ts = true,
-                disable_filetype = { "TelescopePrompt", "vim" }
+                disable_filetype = { "TelescopePrompt", "vim" },
             })
         end,
     },
@@ -66,7 +90,7 @@ return {
             require("ibl").setup({
                 indent = {
                     char = "┆",
-                }
+                },
             })
         end,
     },
@@ -81,7 +105,7 @@ return {
         opts = {
             window = {
                 width = 30,
-                position = "right"
+                position = "right",
             },
             git_status = {
                 enabled = true,
@@ -99,7 +123,7 @@ return {
                     end,
                 },
             },
-            vim.keymap.set("n", "<leader>e", ":Neotree toggle<CR>", { desc = "ファイラーを開く" })
+            vim.keymap.set("n", "<leader>e", ":Neotree toggle<CR>", { desc = "ファイラーを開く" }),
         },
         cmd = "Neotree",
     },
@@ -115,6 +139,6 @@ return {
         -- git
         "lewis6991/gitsigns.nvim",
         config = true,
-        event = { "BufReadPre", "BufNewFile" }
+        event = { "BufReadPre", "BufNewFile" },
     },
 }
