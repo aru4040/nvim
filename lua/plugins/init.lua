@@ -6,6 +6,14 @@ return {
         priority = 1000,
     },
     {
+        "xiantang/darcula-dark.nvim",
+        lazy = false,
+        priority = 1000,
+        dependencies = {
+            "nvim-treesitter/nvim-treesitter",
+        },
+    },
+    {
         "svrana/neosolarized.nvim",
         dependencies = {
             "tjdevries/colorbuddy.nvim",
