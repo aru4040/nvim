@@ -4,7 +4,8 @@ local lsp_servers = {
     -- Rust
     "rust_analyzer",
     -- Python
-    "pyright", "ruff",
+    "pyright",
+    "ruff",
     -- JavaScript
     "ts_ls",
     -- HTML
@@ -18,13 +19,18 @@ local lsp_servers = {
 }
 
 local formatters = {
-    "djlint", "black", "isort", "stylua", "shfmt", "prettier",
+    "djlint",
+    "black",
+    "isort",
+    "stylua",
+    "shfmt",
+    "prettier",
 }
 
 local diagnostics = {
-    "yamllint", "selene",
+    "yamllint",
+    "selene",
 }
-
 
 return {
     {
@@ -110,7 +116,7 @@ return {
         config = function()
             require("lspsaga").setup({
                 symbol_in_winbar = {
-                    separator = " > "
+                    separator = " > ",
                 },
             })
         end,
@@ -129,7 +135,7 @@ return {
         },
         opts = {
             ensure_installed = {
-                "pyton"
+                "pyton",
             },
             handlers = {},
         },
