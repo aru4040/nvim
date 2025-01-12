@@ -6,14 +6,6 @@ return {
         priority = 1000,
     },
     {
-        "xiantang/darcula-dark.nvim",
-        lazy = false,
-        priority = 1000,
-        dependencies = {
-            "nvim-treesitter/nvim-treesitter",
-        },
-    },
-    {
         "svrana/neosolarized.nvim",
         dependencies = {
             "tjdevries/colorbuddy.nvim",
@@ -24,6 +16,12 @@ return {
             comment_italics = true,
             background_set = false,
         },
+    },
+    {
+        "projekt0n/github-nvim-theme",
+        name = "github-theme",
+        lazy = false,
+        priority = 1000,
     },
     {
         -- 構文解析
