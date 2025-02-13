@@ -6,20 +6,75 @@ return {
         priority = 1000,
     },
     {
-        "svrana/neosolarized.nvim",
-        dependencies = {
-            "tjdevries/colorbuddy.nvim",
-        },
-        lazy = false,
+        "ellisonleao/gruvbox.nvim",
         priority = 1000,
         opts = {
-            comment_italics = true,
-            background_set = false,
+            contrast = "hard",
         },
+    },
+    {
+        "RRethy/base16-nvim",
+        priority = 1000,
+    },
+    {
+        "rockyzhang24/arctic.nvim",
+        dependencies = { "rktjmp/lush.nvim" },
+        name = "arctic",
+        branch = "main",
+        priority = 1000,
+    },
+    {
+        "cdmill/neomodern.nvim",
+        lazy = false,
+        priority = 1000,
     },
     {
         "projekt0n/github-nvim-theme",
         name = "github-theme",
+        lazy = false,
+        priority = 1000,
+    },
+    {
+        "navarasu/onedark.nvim",
+        lazy = false,
+        priority = 1000,
+    },
+    {
+        "jacoborus/tender.vim",
+        lazy = false,
+        priority = 1000,
+    },
+    {
+        "rebelot/kanagawa.nvim",
+        lazy = false,
+        priority = 1000,
+    },
+    {
+        "xiantang/darcula-dark.nvim",
+        lazy = false,
+        priority = 1000,
+        config = function()
+            require("darcula").setup({
+                override = function(c)
+                    return {
+                        background = "#333333",
+                        dark = "#000000",
+                    }
+                end,
+                opt = {
+                    integrations = {
+                        telescope = false,
+                        lualine = true,
+                        lsp_semantics_token = true,
+                        nvim_cmp = true,
+                        dap_nvim = true,
+                    },
+                },
+            })
+        end,
+    },
+    {
+        "ishan9299/nvim-solarized-lua",
         lazy = false,
         priority = 1000,
     },
